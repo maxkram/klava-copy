@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/* .themeMode {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(56, 56, 56);
+    padding: 2px;
+    top: 4px;
+    right: 20px;
+    border-radius: 50px;
+} */
+/* 
+.themeMode>* {
+    line-height: 30px;
+    float: left;
+    cursor: pointer;
+} */
+
+/* label {
+    color: rgb(255, 255, 255)
+} */
+
+/* input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .2s;
+} */
+/* 
+input:checked[type="checkbox"] {
+    background-color: #1b1b1b;
+    box-shadow: inset 0 0 5px rgba(78, 78, 78, 0.2);
+} */
+
+/* input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: rgb(231, 150, 150);
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+} */
+/* 
+input:checked[type="checkbox"]::before {
+    left: 20px;
+} */
+
+.main {
+    width: 90%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.textdiv {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+textarea {
+    width: 800px;
+    height: 200px;
+    background-color: rgb(240, 248, 255);
+    border: 5px solid rgb(27, 27, 27);
+    outline: none;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    resize: none;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+}
+
+i.material-icons {
+    cursor: pointer;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-moz-selection {
+    background: rgb(201, 230, 255);
+}
+
+::selection {
+    background: rgb(201, 230, 255);
+}
+
+.bgKeyboard {
+    width: 1008px;
+    height: 350px;
+    background-color: rgb(117, 162, 226);
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.startMsg {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+    font-size: 44px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.keyboard {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin-left: auto;
+    margin-right: auto;
+    width: 998px;
+    height: 350;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    width: 100%;
+    height: 60px;
+}
+
+.numberLine, .alphaUpperLine, .alphaMiddleLine, .alphaLowerLine, .BottomLine {
+    margin: 5px 0 5px 0;
+}
+
+.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: black;
+    width: 55px;
+    height: 55px;
+    border: black 1px solid;
+    border-radius: 20%;
+    background: rgb(235, 232, 232);
+    margin-left: 5px;
+    margin-right: 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div.backspace {
+    width: 115px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+div.tab, div.backSlash {
+    width: 85px;
+    border-radius: 10px;
+}
+
+div.capslock {
+    width: 100px;
+    border-radius: 10px;
+}
+
+div.enter {
+    width: 137px;
+    border-radius: 10px;
+}
+
+div.lShift {
+    width: 130px;
+    border-radius: 10px;
+}
+
+div.rShift {
+    width: 174px;
+    border-radius: 10px;
+}
+
+div.lCtrl {
+    width: 65px;
+    border-radius: 10px;
+}
+
+div.space {
+    width: 388px;
+    border-radius: 10px;
+}
+
+div.rCtrl {
+    width: 174px;
+    border-radius: 10px;
+}
+
+/*Key colors*/
+
+div.two, div.w, div.s, div.x, div.blacktick, div.one, div.tab, div.q, div.a, div.lShift, div.z, div.lCtrl, div.win, div.three, div.e, div.d, div.c, div.four, div.five, div.r, div.t, div.f, div.g, div.v, div.b, div.six, div.seven, div.y, div.u, div.h, div.j, div.n, div.m, div.eight, div.i, div.k, div.comma, div.nine, div.o, div.l, div.fullstop, div.zero, div.minus, div.equalsTo, div.backspace, div.p, div.openedBracket, div.closedBracket, div.backSlash, div.semicolon, div.quote, div.enter, div.frontSlash, div.rShift, div.rCtrl, div.capslock, div.rAlt, div.space, div.lAlt, div.lFunction, div.rFunction {
+    background-color: rgb(173, 216, 230);
+    border-color: rgb(44, 88, 133);
+}
+
+.transition {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.showToggle {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hideToggle {
+    visibility: hidden;
+    opacity: 0;
+}
